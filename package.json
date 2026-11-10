@@ -1,0 +1,1 @@
+{"description":"Paste a NEAR address, message or link. Get one clear verdict - SAFE, CAUTION or SCAM - with the reasons, backed by live NEAR blockchain data.","engines":{"node":">=18"},"license":"MIT","name":"scam-guardian","private":true,"scripts":{"start":"node server.js","test":"node test/run-tests.js"},"version":"0.1.0"}

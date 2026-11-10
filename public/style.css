@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #0c1222; color: #eef1f8; margin: 0; }
+main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 2rem; margin-bottom: 4px; }
+.sub { line-height: 1.5; color: #c6cde0; }
+textarea { width: 100%; padding: 12px; font-size: 1rem; border-radius: 10px; border: 2px solid #334; background: #141b31; color: #fff; }
+button#check { width: 100%; margin-top: 10px; padding: 14px; font-size: 1.1rem; font-weight: 700; border: 0; border-radius: 10px; background: #00ec97; color: #06281a; cursor: pointer; }
+button#check:disabled { opacity: .6; }
+.examples { color: #9aa5c4; }
+button.ex { background: #1d2745; color: #cfe3ff; border: 1px solid #334; border-radius: 999px; padding: 4px 10px; margin: 2px; cursor: pointer; }
+#verdict { font-size: 2.2rem; font-weight: 800; text-align: center; padding: 18px; border-radius: 12px; margin: 20px 0 8px; }
+.verdict-safe { background: #0d3b26; color: #4be38e; }
+.verdict-caution { background: #3d3208; color: #ffd94d; }
+.verdict-scam { background: #420f16; color: #ff6b7a; }
+#facts p { margin: 4px 0; color: #c6cde0; }
+#reasons li { margin-bottom: 12px; line-height: 1.45; }
+#error { color: #ff6b7a; font-weight: 600; }
+footer { margin-top: 36px; color: #8b96b5; font-size: .9rem; line-height: 1.5; }
+code { color: #cfe3ff; }

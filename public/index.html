@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scam Guardian - check before you send</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>🛡️ Scam Guardian</h1>
+  <p class="sub">Someone sent you a NEAR address, a message or a link?<br>
+  Paste it here <strong>before</strong> you send anything.<br>
+  You get one clear answer: <strong>SAFE</strong>, <strong>CAUTION</strong> or <strong>SCAM</strong> - and the reasons why.</p>
+
+  <textarea id="input" rows="4" placeholder="Paste a NEAR address (like aurora.near), a message, or a link here..."></textarea>
+  <button id="check">Check it</button>
+  <p class="examples">Try one:
+    <button class="ex" data-v="aurora.near">aurora.near</button>
+    <button class="ex" data-v="near-airdrop.near">near-airdrop.near</button>
+    <button class="ex" data-v="Congratulations! You won a NEAR airdrop, send 1 NEAR to verify your wallet and receive 10 NEAR">a winning message</button>
+  </p>
+
+  <section id="result" hidden>
+    <div id="verdict"></div>
+    <div id="facts"></div>
+    <h2 id="why-title">Why:</h2>
+    <ul id="reasons"></ul>
+    <p id="clean" hidden>Nothing suspicious was found. Still, only ever send money to addresses you got from an official page you opened yourself.</p>
+  </section>
+  <p id="error" hidden></p>
+
+  <footer>
+    <p>How it works: account checks read the live NEAR blockchain (public RPC) and a public indexer.
+    Message checks use an open pattern list - every rule is in <code>data/patterns.json</code> in the repository, in plain words.
+    No wallet connection. Nothing you paste is stored.</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
